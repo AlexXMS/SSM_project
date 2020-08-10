@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--configuration核心配置文件-->
+<configuration>
+    <!--配置数据源database.properties，交给spring配置-->
+    <!--可以给实体类起别名, 没有alias则默认名字为小写字母开头的全名字-->
+    <typeAliases>
+        <package name="com.zm.pojo"/>
+    </typeAliases>
+    <mappers>
+        <!--<mapper resource="com/zm/dao/Mapper.xml"/>-->
+        <mapper class="com.zm.dao.Mapper"/>
+    </mappers>
+
+</configuration>
